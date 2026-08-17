@@ -224,8 +224,6 @@ install_official_packages() {
 
         # Apariencia y motores GTK
         lxappearance
-        gtk-engine-murrine
-        gtk-engines
         xsettingsd
 
         # Display Manager
