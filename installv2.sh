@@ -274,7 +274,7 @@ install_optional_packages() {
     echo ""
     log_info "¿Deseas instalar paquetes adicionales y temas de personalización AUR? (Recomendado)"
     echo -e "${CLR_CYAN}Los paquetes opcionales incluyen:${CLR_RESET}"
-    echo -e "  - ${CLR_MAUVE}brave-bin${CLR_RESET} (Navegador web rápido y privado)"
+    echo -e "  - ${CLR_MAUVE}brave-origin${CLR_RESET} (Navegador web rápido y privado)"
     echo -e "  - ${CLR_MAUVE}neovim${CLR_RESET} (Editor de texto moderno)"
     echo -e "  - ${CLR_MAUVE}htop & fastfetch${CLR_RESET} (Monitor del sistema e información estética)"
     echo -e "  - ${CLR_MAUVE}catppuccin-gtk-theme-mocha${CLR_RESET} (Tema GTK oficial Catppuccin Mocha)"
@@ -293,7 +293,7 @@ install_optional_packages() {
 
         # AUR packages
         AUR_PKGS+=(
-            brave-bin
+            brave-origin
             catppuccin-gtk-theme-mocha
             tela-circle-icon-theme
         )
@@ -1331,7 +1331,7 @@ shadow-exclude = [
   "name = 'Notification'",
   "class_g = 'Polybar'",
   "class_g ?= 'Notify-osd'",
-  "_GTK_FRAME_EXTENTS@:c"
+  "_GTK_FRAME_EXTENTS@"
 ];
 
 # --- Transparencias y Opacidad ---
@@ -1345,7 +1345,7 @@ opacity-rule = [
   "75:class_g = 'kitty' && !focused",
   "90:class_g = 'Rofi'",
   "95:class_g = 'Thunar'",
-  "100:class_g = 'Brave-browser'",
+  "100:class_g = 'Brave-origin'",
   "100:class_g = 'feh'"
 ];
 
